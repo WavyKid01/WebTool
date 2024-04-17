@@ -1,0 +1,217 @@
+.has-js {
+
+    //---------------------------------------------from bottom
+    //si j'ai du css
+    [data-scrolly='fromBottom'] {
+        //Mettre l'élément invisible
+        opacity: 0;
+        transform: translateY(60px);
+        transition: all 0.7s ease-in-out;
+
+        &.is-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    [data-scrolly='fromBottomDeux'] {
+        //Mettre l'élément invisible
+        opacity: 0;
+        transform: translateY(60px);
+        transition: all 0.5s ease-in-out;
+
+        &.is-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+
+    //---------------------------------------------from left
+
+    [data-scrolly='fromLeft'] {
+        //Mettre l'élément invisible
+        opacity: 0;
+        transform: translateX(-60px);
+        transition: all 0.7s ease-in-out;
+
+        &.is-active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    [data-scrolly='fromLeftDeux'] {
+        //Mettre l'élément invisible
+        opacity: 0;
+        transform: translateX(-60px);
+        transition: all 0.9s ease-in-out;
+
+        &.is-active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    [data-scrolly='fromLeftText'] {
+        //Mettre l'élément invisible
+        opacity: 0;
+        transform: translateX(-60px);
+        transition: all 0.9s ease-in-out;
+
+        &.is-active {
+            opacity: 0.7;
+            transform: translateX(0);
+        }
+    }
+
+    //---------------------------------------------from right
+
+    [data-scrolly='fromRight'] {
+        //Mettre l'élément invisible
+        opacity: 0;
+        transform: translateX(60px);
+        transition: all 0.7s ease-in-out;
+
+        &.is-active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            transform: translateX(-60px);
+        }
+    }
+
+    [data-scrolly='fromRightText'] {
+        //Mettre l'élément invisible
+        opacity: 0;
+        transform: translateX(60px);
+        transition: all 0.7s ease-in-out;
+
+        &.is-active {
+            opacity: 0.7;
+            transform: translateX(0);
+        }
+    }
+
+    //---------------------------------------------ALPHA
+
+    [data-scrolly='alpha'] {
+        //Mettre l'élément invisible
+        opacity: 0;
+
+        transition: all 0.7s ease-in-out;
+
+        &.is-active {
+            opacity: 0.7;
+            transform: translateY(0);
+        }
+    }
+
+    //---------------------------------------------from top
+
+    [data-scrolly='fromTop'] {
+        //Mettre l'élément invisible
+        opacity: 0;
+        transform: translateY(-60px);
+        transition: all 0.7s ease-in-out;
+
+        &.is-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    [data-scrolly='fromTopDeux'] {
+        //Mettre l'élément invisible
+        opacity: 0;
+        transform: translateY(-60px);
+        transition: all 0.9s ease-in-out;
+
+        &.is-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    //----------------------------------------------------formulaire
+
+    [data-scrolly='formulaire'] {
+        //Mettre l'élément invisible
+
+        transition: all 3s $ease-out-expo;
+
+        &.is-active {
+            width: 43%;
+
+            @media screen and (max-width: 1150px) {
+                width: 35%;
+            }
+
+            @media screen and (max-width: 1150px) {
+                width: 70%;
+            }
+
+            @media screen and (max-width: 475px) {
+                width: 90%;
+            }
+
+            &::after {
+                width: 60%;
+            }
+
+            &::before {
+                height: 100%;
+            }
+
+            .another_fieldset {
+
+                &::after {
+                    width: 30%;
+                }
+
+                &::before {
+                    height: 40%;
+                }
+            }
+        }
+    }
+
+
+    [data-scrolly='formImageUn'] {
+        //Mettre l'élément invisible
+
+        transition: all 3s $ease-out-expo;
+
+        &.is-active {
+            bottom: 20%;
+            right: 50px;
+            max-width: 43%;
+
+            @media screen and (max-width: 1150px) {
+                right: 0;
+                max-width: 55%;
+            }
+        }
+    }
+
+    [data-scrolly='formImageDeux'] {
+        //Mettre l'élément invisible
+
+        transition: all 3s $ease-out-expo;
+
+        &.is-active {
+            top: 150px;
+            left: 50px;
+            max-width: 33%;
+
+            @media screen and (max-width: 1150px) {
+                left: -50px;
+                max-width: 40%;
+            }
+        }
+    }
+
+}

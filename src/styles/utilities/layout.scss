@@ -1,0 +1,10 @@
+.u-grid-fullwidth {
+    grid-column: 1 / -1 !important;
+}
+
+.u-grid-fullwidth-res {
+    @media screen and (max-width: 1000px) {
+        grid-column: 1 / -1 !important;
+        margin: 15px 0;
+    }
+}

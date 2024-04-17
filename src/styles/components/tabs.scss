@@ -1,0 +1,30 @@
+/* ==========================================================================
+   TABS / STYLES DE BASE
+   Tout les styles de base pour la composante TABS :)
+   ========================================================================== */
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.tabs__content {
+
+    overflow-x: auto;
+}
+
+.tab__content {
+    display: none;
+
+    &.is-active {
+        display: block;
+    }
+}
+
+/* ==========================================================================
+   TABS / BLOC ETUDE
+   Tout les styles pour la composante TABS de la page groupe scolaire :)
+   ========================================================================== */

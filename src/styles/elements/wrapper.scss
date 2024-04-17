@@ -1,0 +1,67 @@
+/* ==========================================================================
+   WRAPPER / ELEMENT
+   ========================================================================== */
+
+.wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+
+    @media screen and (max-width: $breakpoint-sm) {
+        max-width: 92%;
+    }
+
+    // @media screen and (max-width: $breakpoint-xl) {
+    //     max-width: $breakpoint-lg;
+    // }
+
+    // @media screen and (max-width: $breakpoint-lg) {
+    //     max-width: $breakpoint-ml;
+    // }
+
+    // @media screen and (max-width: $breakpoint-ml) {
+    //     max-width: $breakpoint-md;
+    // }
+
+    // @media screen and (max-width: $breakpoint-md) {
+    //     max-width: $breakpoint-sm;
+    // }
+
+    // @media screen and (max-width: $breakpoint-sm) {
+    //     max-width: $breakpoint-xs;
+    // }
+
+    // @media screen and (max-width: $breakpoint-xs) {
+    //     max-width: $breakpoint-xxs;
+    // }
+
+    // @media screen and (max-width: 300px) {
+    //     max-width: 250px;
+    // }
+}
+
+.wrapper-xl {
+    margin: 0 auto;
+    max-width: 96%;
+
+    @media screen and (max-width: $breakpoint-sm) {
+        max-width: 92%;
+    }
+}
+
+header {
+
+    .wrapper-xl {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-transform: uppercase;
+        height: calc(100% + 40px);
+        padding: 20px 2%;
+        max-width: 100%;
+        font-family: var(--font-secondary);
+
+        @media screen and (max-width: $breakpoint-xs) {
+            padding: 20px 4%;
+        }
+    }
+}
